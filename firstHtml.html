@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML PART 1</title>
+</head>
+<body>
+    <!--Heading And Paragrapgh Tags-->
+
+    <h1>Welcome To Internship Studio</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Sit a magni voluptates quod repudiandae ad, est nesciunt ab quas accusantium non atque 
+        voluptas aliquid nihil exercitationem fuga incidunt quo id.</p>
+        <hr>
+
+        <!--Text Formatting using HTML Tags :-->
+
+         <!--1) Bold Tag - Used for some bold texts<b></b>
+         2) strong tag - also gives same output as bold tag but it lets developers & 
+         browsers understand that some text need to be highlighted boldly.<strong></strong>
+         3)italic tag - used to make texts italic.<i></i>
+         4)emphasized tag - also gives same output as italic tag .<em></em> 
+         5) underlined tag - used for making underlined texts <u></u>
+         6) inserted tag - gives same output as underlined tag. <ins></ins> 
+         7) deleted tag - it represents that text is deleted or no longer useful for web. <del></del> 
+         8) superscript tag - it it used for creating mathematical formulas & Equations(In this, text appears at the top
+         of the line of that normal text). <sup></sup>
+         9) subscript tag - it it used for creating scientific formulas.(In this, text appears at the bottom
+         of the line of that normal text). <sub></sub> 
+         10) hr tag - webpage get divided into different parts. <hr>
+         11) mark tag - used to mark/highlight the text.-->
+        <p><i>, ipsum dolor sit amet consectetur adipisicing elit.</i> 
+            <b>Sit a magni voluptates quod repudiandae ad, est nesciunt ab quas accusantium non atque</b> 
+            <u> aliquid nihil exercitationem fuga incidunt quo id.</u></p>
+            <del>This is deleted text</del><br>
+            <mark>This is a marked text</mark><br>
+            (a+b)<sup>2</sup>=a<sup>2</sup>+2ab+b<sup>2</sup><br>
+            H<sub>2</sub>O 
+            <hr>
+            <!--There are 3 types of hyperlinking :
+
+            1) External Linking - Links to visit to websites
+            2) Internal Linking - Linking to internal webpages
+            3) Inpage Linking - Linking in same webpage by going to some 
+            part of webpages. -->
+       <a href="Links.html">Go To Second Page</a>
+       <hr>
+       <!--Lists : Ordered, Unordered, description Nested
+       Items in list tag can be mentioned using <li></li> tag.
+       Bydefault the list is disc(black dark circles). we can also change the type
+       of bullet of list just by using "type" attribute. types of bulleting is
+       circle, square & none. The Main difference between the <ul> & <ol> is that ul tag doesnt follow the 
+        sequence whereas the ol tag needs to follow the sequence. -->
+
+       <!--Unordered List-->
+       <h2>List Of Anime</h2>
+       <ul type="circle">
+        <li>Dragon Ball Z</li>
+        <li>My Hero Academia</li>
+        <li>Attack On Titan</li>
+        <li>Jujutsu Kaizen</li>
+        <li>Demon Slayer</li>
+       </ul><br><br>
+
+       <!--Ordered List
+       Bydefault type for ordered list is numbered. for eg(ol type="1").other types
+       are : For Roman No(ol type="i") For Capital Roman No(ol type="I") For type Alphabates(ol type="A")
+       Small letter ordered list(ol type="a") 
+       -->
+       <h2>List Of Cities</h2>
+
+       <ol type="I">
+        <li>Mumbai</li>
+        <li>Pune</li>
+        <li>Nashik</li>
+        <li>Nagpur</li>
+       </ol>
+
+           <!--Description List
+       it is a list in which each items having descriptions.
+       <dl> - Description List
+        <dt> - Definition Term
+        <dd> - Definition Data
+       -->
+       <h2>List Of Cities</h2>
+
+       <dl>
+            <dt>
+                <strong>HTML</strong>
+                <dd>HTML Stands for Hyper Text Markup Language</dd>
+            </dt>
+            <dt>
+               <em>CSS</em>
+                <dd>CSS Stands for Cascading Style Sheet</dd>
+            </dt>
+            <dt>
+                <ins>JS</ins>
+                <dd>JS Stands for JavaScript</dd>
+            </dt>
+       </dl>
+
+       
+           <!--Nested List
+       it is a Combo of Ordered & Unordered List.
+       -->
+
+       <h2>Questions need to be answered</h2>
+       <ol>
+        <li><strong>Define the Terms</strong></li>
+        <ol type="A">
+            <li>HTML</li>
+            <li>HTTP</li>
+            <li>CSSL</li>
+            <li>JS</li>
+        </ol>
+       </ol>
+
+       <!--Images And Multimedia-->
+
+       <h2>List Of Animes</h2>
+       <ol type="A">
+        <!--alt is attribute used to show alternative text when image facing some problems to load-->
+        <li><img src="Images/Goku.jpg" height="190" width="180" align="center">Dragon Ball Z</li><br>
+        <li><img src="Images/mha.jpg" height="190" width="180" align="center"> My Hero Academia</li><br>
+        <li><img src="Images/aot.jpg" height="190" width="180" align="center">Attack On Titan</li><br>
+        <li><img src="Images/jk.jpg" height="190" width="180" align="center">Jujutsu Kaizen</li><br>
+        <li><img src="Images/ds.jpg" height="190" width="180" align="center">Demon Slayer</li><br>
+       </ol>
+
+       <!--Creating Links using Images-->
+       <a href="https://hianime.to/watch/my-hero-academia-2-131?ep=3858"><img src="Images/mha.jpg" height="190" width="180" align="center"></a>
+       <hr>
+
+       <!--IFrames & Tags introduced in HTML5--
+       IFrame tag is basically used to embed the website, videos or other multimedia files or webpages.
+       frameborder tag is used to remove borders around the multimedia.-->
+
+       <iframe src="https://vegamovies.li/" height="500" width="500" frameborder="0"></iframe>
+
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/-22OUExCeN0?si=gSNhfHbVeVoqRzKn" 
+       title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <hr>
+
+       <!--HTML5 Tags that will replace previous html tags :
+       1) Div tag- it is a block level tag whereas 2)span tag - is a inline tag .
+       3) nav tag - is used to create a navigation bar.
+       4) section tag - it is alternative of div tag. basically used to divide our webpage into diff. sections.  -->
+
+       <nav>
+        <a href="HTML">HTML</a>
+        <a href="CSS">CSS</a>
+        <a href="JAVASCRIPT">JS</a>
+       </nav>
+       <hr>
+       <section>
+                 <!--IFrames & Tags introduced in HTML5--
+       IFrame tag is basically used to embed the website, videos or other multimedia files or webpages.
+       frameborder tag is used to remove borders around the multimedia.-->
+
+       <iframe src="https://vegamovies.li/" height="500" width="500" frameborder="0"></iframe>
+
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/-22OUExCeN0?si=gSNhfHbVeVoqRzKn" 
+       title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </section>
+
+       <section>
+            <!--HTML5 Tags that will replace previous html tags :
+        Div tag- it is a block level tag whereas  span tag - is a inline tag (Sorry but div & span is not a semantic tag).
+       1) nav tag - is used to create a navigation bar.
+       2) section tag - it is alternative of div tag. basically used to divide our webpage into diff. sections.
+       3) article tag - same use like a section tag. <article></article>
+       4) aside tag - used to give brief info about other texts. It is also used as side part of our webpage.<aside></aside> 
+       5) figure tag - we can embed text with group of pics with the help of these tag.
+       6) header & footer tag - headings is included in header part whereas some minute details such as web developers, contact no 
+       is mentioned in footer part.-->
+
+       <nav>
+        <a href="HTML">HTML</a>
+        <a href="CSS">CSS</a>
+        <a href="JAVASCRIPT">JS</a>
+       </nav>
+       </section>
+
+       <figure>
+            <a href="http://www.dragonballz.com/"><img src="Images/Goku.jpg" height="500" width="500"></a>
+            <figcaption>This is the Number One Anime</figcaption>
+       </figure>
+       <hr>
+       <!--Tables -->
+
+       <table border="2">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Raj</td>
+            <td>Kanade</td>
+        </tr>
+        <tr>
+            <td>Sameer</td>
+            <td>Kanade</td>
+        </tr>
+       </table>
+       <hr>
+
+       <!--Forms -->
+       <form>
+        Name  <input type="text"><br>
+        Remember Me  <input type="checkbox"><br>
+        Gender <input type="radio" name="Gender">Male
+        <input type="radio" name="Gender">FeMale<!--In order to choose only one radiobutton at a time, we use attribute called name
+        to create the group of radiobuttons & let them know that the buttons belong to the same group.-->
+       </form>
+
+
+
+
+
+
+    
+</body>
+</html>
